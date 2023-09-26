@@ -1,16 +1,11 @@
 const removeFromArray = function(input,...toRemove) {
-    let result = [];
-  
-    for (let argCounter = 0; x < toRemove.length - 1; argCounter++)
+    let result = input;
+   
+    for (let argCounter = 0; argCounter < toRemove.length; argCounter++)
     {
-        for (let inputCounter = 0; x , input.length - 1; inputCounter++)
-        {
-            if (!(input[inputCounter] === toRemove[argCounter])){
-                result.push(input[x]);
-            }
-        }
+       result = result.filter((check) => check !== toRemove[argCounter]);
     }
-
+ 
     return result;
 }
 
